@@ -8,11 +8,8 @@ import numpy as np
 # Load Point Cloud Data Clusters
 
 # Read data from the text file
-file_path = "C:/Users/aagr657/pointcloud_clusters.txt"
+file_path = "enter filepath to point cloud clusters"
 data = np.loadtxt(file_path, delimiter=' ')
-
-# Well, I am not sure If I should do the standardization or not, but for factor of safety, I am doing it. 
-# Although, I don't think that is needed because both the axes are on the same scale. 
 
 # Separate the coordinates and cluster numbers
 coordinates = data[:, :3]  # Extract x, y, z coordinates
@@ -148,4 +145,5 @@ ax.set_title('Clusters with Bounding Boxes')
 ax.view_init(elev=90, azim=90)
 
 # Show plot
+
 plt.show()
